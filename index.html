@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- M E T A  T A G S -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- G O O G L E   F O N T -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- B O O T S T R A P   C S S -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"
+  >
+  <!-- C U S T O M   C S S -->
+  <link rel="stylesheet" href="index.css">
+  <!-- T I T L E -->
+  <title>infoIP</title>
+</head>
+
+<body>
+  <!-- H E R O -->
+  <div class="container" id="hero-container">
+    <div class="row justify-content-center align-items-center">
+
+      <!-- Title -->
+      <div class="col-6" id="title">
+        <div class="row justify-content-center align-items-center">
+          <h1>info<b>IP</b></h1>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <h3>check for suspicious ip addresses</h3>
+        </div>
+      </div>
+
+      <!-- Illustration -->
+      <div class="col-6" id="illustration">
+        <lottie-player
+          src="https://assets3.lottiefiles.com/temporary_files/fp4488.json"
+          background="transparent"
+          speed="0.35"
+          style="width: 50vw; height: 50vw;"
+          loop
+          autoplay>
+        </lottie-player>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- A P P -->
+  <div class="container" id="app-container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-8">
+        <div class="mb-3">
+          <form id="form">
+            <label for="exampleFormControlInput1" class="form-label">User IP address</label>
+            <input required class="form-control bg-dark mb-1" id="input" placeholder="enter the IP address here">
+            <small>For example: 54.85.132.205</small>
+            <div class="d-grid mt-3">
+              <button class="btn btn-primary" type="submit" id="submit">Check this IP</button>
+            </div>
+          </form>
+        </div>
+        <!-- R E S U L T S -->
+        <div class="mt-5 mb-5 bg-dark" id="res">
+          <pre id="results">
+          </pre>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+  <!-- J A V A S C R I P T -->
+  <script src="index.js"></script>
+  <!-- B O O T S T R A P   j s D e l i v r -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous">
+  </script>
+  <!-- L O T T I E   P L A Y E R -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
