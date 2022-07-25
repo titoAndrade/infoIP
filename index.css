@@ -16,6 +16,8 @@ body {
   height: 65vh;
 }
 
+
+
 #title {
   margin-top: -12vh;
   margin-left: 5vw;
@@ -26,13 +28,13 @@ body {
   font-size: 10vw;
   font-family: playfair display;
   font-weight: 600;
-  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+  text-shadow: 0.5vmax 0.5vmax 1vmax rgba(0, 0, 0, 0.35);
 }
 
 #title b {
   font-size: 12vw;
   font-family: oswald;
-  text-shadow: 8px 8px #00dfac;
+  text-shadow: 0.7vmax 0.7vmax #00dfac;
 }
 
 #title h3 {
@@ -40,7 +42,7 @@ body {
   font-size: 1.7vw;
   letter-spacing: 0.05vw;
   margin-top: -0.65em;
-  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+  text-shadow: 0.5vmax 0.5vmax 1vmax rgba(0, 0, 0, 0.35);
 
 }
 
@@ -48,6 +50,18 @@ body {
   /* border: solid 1px #fff; */
   margin-top: -12vh;
   margin-left: -22vw;
+}
+
+@media screen and (max-width: 700px) {
+  #hero-container {
+    margin-top: 40vh;
+    margin-bottom: -45vh;
+    transform: scale(1.2);
+  }
+
+  #title {
+    margin-left: 10vw;
+  }
 }
 
 /* A P P */
