@@ -54,14 +54,22 @@ body {
 
 @media screen and (max-width: 700px) {
   #hero-container {
-    margin-top: 40vh;
-    margin-bottom: -45vh;
-    transform: scale(1.2);
+    margin-top: 50vmin;
+    height: 35vmin;
+    /* margin-bottom: -45vh; */
   }
 
   #title {
     margin-left: 10vw;
+    transform: scale(1.2);
   }
+
+  #illustration {
+    margin-left: -25vw;
+    transform: scale(1.2);
+
+  }
+
 }
 
 /* A P P */

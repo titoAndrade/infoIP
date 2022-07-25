@@ -25,7 +25,6 @@ $form.addEventListener('submit', async (event) => {
   const {value} = $input
   if (!value) return
 
-  $submit.setAttribute('disabled', '')
   const ipInfo = await fetchIpInfo(value)
 
   if(ipInfo) {
@@ -33,9 +32,6 @@ $form.addEventListener('submit', async (event) => {
   }
 
 $res = document.querySelector('#res').hidden = false
-$submit.removeAttribute('disabled', '')
-
-
 
 })
 
